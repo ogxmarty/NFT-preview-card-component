@@ -1,0 +1,284 @@
+/* Imported Fonts: */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* Universal Styling */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS for Attributions */
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+body{
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  font-size: 14px;
+}
+
+/* Main CSS */
+main{
+  margin: 2rem;
+}
+
+
+/* Container CSS */
+.container{
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 1.5rem;
+  
+}
+
+/* Card image CSS */
+
+.card-image{
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-image img{
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.image-overlay{
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 6.2rem;
+  border-radius: 1rem;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.image-overlay:hover{
+  opacity: 1;
+}
+
+.image-overlay img{
+  height: auto;
+  width: auto;
+}
+
+
+/* Card description CSS */
+
+.card-description{
+  padding: 0.2rem;
+}
+
+.card-description h1{
+  font-size: 26px;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  padding: 0 1.5rem;
+}
+
+.card-description p{
+  padding: 1rem 1.5rem;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: hsl(215, 51%, 70%);
+}
+
+/* Card component CSS */
+
+.card-components{;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3.5rem;
+  padding: 1 0rem;
+  padding-right: 0.5rem;
+  color: hsl(215, 51%, 70%);
+}
+
+.card-etherum{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-etherum p{
+  font-size: 18px;
+  font-weight: 300;
+  padding-left: 0.5rem;
+  color: hsl(178, 100%, 50%);
+  text-transform: uppercase;
+}
+
+.card-clock{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-clock p{
+  font-size: 18px;
+  font-weight: 300;
+}
+
+#icons{
+  min-width: 20%;
+  min-height: 20%;
+}
+
+
+hr{
+  width: 85%;
+  border: 0.1px solid;
+  color: hsl(215, 51%, 70%);
+  margin: 1rem;
+}
+
+
+/* Card creator CSS */
+
+.card-creator{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem 1rem;
+  padding-bottom: 1rem;
+}
+
+.card-creator img{
+  max-width:15%;
+  max-height: 15%;
+  border-radius: 5rem;
+  border: solid 0.1px white;
+}
+
+.card-creator p{
+  font-size: 14px;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+  padding: 0.2rem;
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+}
+
+.card-creator span{
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+  padding: 0.2rem;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 400px) {
+  main{
+    width: 100%;
+    max-height: 900px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .container{
+    max-width: 80%;
+    min-height: 40%;
+  }
+
+  .card-components{;
+    gap: 4.5rem;
+  }
+
+}
+
+@media screen and (min-width: 700px) {
+  main{
+    width: 100%;
+    max-height: 900px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .container{
+    max-width: 40%;
+    min-height: 40%;
+  }
+
+  .card-components{;
+    gap: 3rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  main{
+    width: 100%;
+    max-height: 900px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+  .container{
+    max-width: 25%;
+    min-height: 40%;
+  }
+  .card-components{;
+    gap: 6rem;
+  }
+
+
+  .card-creator p{
+    margin-right: 1rem;
+  }
+
+  .card-creator{
+    padding-top: 0;
+    padding-bottom: 2rem;
+  }
+
+  .card-description h1{
+    font-size: 20px;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    padding: 0 1.5rem;
+  }
+
+  .image-overlay{
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 7.6rem;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+}
